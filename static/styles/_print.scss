@@ -1,0 +1,46 @@
+.only-print {
+    display: none;
+}
+@media print {
+    @page { 
+        margin: 0;
+        size: 210mm 297mm;
+    }
+    body,html {
+        font-size: 14px;
+        margin-top: 0;
+        padding: 0;
+        margin: 8mm;
+        // font-family: "Merriweather";
+    }
+    p {
+        line-height: 1.1em;
+    }
+    .only-print {
+        display: inherit;
+    }
+    .no-print {
+        display: none !important;
+    }
+    #project-details-wrapper {
+        header {
+            display: block;
+            margin-left: 0;
+            h1 {
+                font-weight: $weight-black;
+                font-size: 3em;
+                padding: 0;
+                margin: 0 0 5px 0;
+            }
+            .title {
+                grid-area: title;
+            }
+            .logo {
+                grid-area: logo;
+                img {
+                    width: 75px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Le but de **Kahibalo** est de fournir une application web permettant de lire et de rédiger des articles de culture générale. Pour ce faire, le projet est constitué de 2 services :
+
+- **Le service web REST** permettant d'accéder et de gérer les ressources via des représentations JSON;
+- **L'application web** s'interfaçant avec le service web afin d'accéder aux différentes fonctionnalités via un navigateur web.
+
+Voici les fonctionnalités implémentées ou en cours de développement :
+
+- Visualisation des articles disponibles avec la possibilité de les filtrer par *tags* ;
+- Visualisation, création, modification et suppression des articles ;
+- Authentification permettant l'autorisation de la création, la modification et la suppression des ressources ;
+- Redirection vers la visualisation d'un article aléatoire.">
+        <meta name="language" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#F54040">
+
+        <meta property="og:site_name" content="Romain Guillotr">
+        <meta property="og:title" content="Romain Guillot">
+        <meta property="og:url" content="">
+        <meta property="og:language" content="fr">
+        <meta property="og:image:url" content="">
+        <meta property="og:type" content="website">
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+
+        <title>Romain Guillot • Kahibalo</title>
+    </head>
+    <body>
+
+        
+
+        <header id="header"class="no-print">
+            <div class="title"><a href="index.html">Romain Guillot</a></div>
+<nav>
+    <ul class="menu no-print">
+        <li class="about "><a href="index.html">À propos</a></li>
+        <li class="resume "><a href="resume.html">CV</a></li>
+        <li class="projects "><a href="projects.html">Mes projets</a></li>
+    </ul>
+</nav>
+        </header>
+        <main>
+            
+<div id="project-details-wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets/projects/kahibalo/logo.png" class="rounded-image">
+        </div>
+        <div class="title">
+            <h1>Kahibalo</h1>
+            <p class="subtitle">Service web REST et application web permettant de gérer des articles de culture générale</p>
+        </div>
+    </header>
+
+    <p class="project-type">Projet personnel (en cours de développement)</p>
+
+    <div class="description">
+
+        <p>Le but de <strong>Kahibalo</strong> est de fournir une application web permettant de lire et de rédiger des articles de culture générale. Pour ce faire, le projet est constitué de 2 services :</p>
+<ul>
+<li><strong>Le service web REST</strong> permettant d'accéder et de gérer les ressources via des représentations JSON;</li>
+<li><strong>L'application web</strong> s'interfaçant avec le service web afin d'accéder aux différentes fonctionnalités via un navigateur web.</li>
+</ul>
+<p>Voici les fonctionnalités implémentées ou en cours de développement :</p>
+<ul>
+<li>Visualisation des articles disponibles avec la possibilité de les filtrer par <em>tags</em> ;</li>
+<li>Visualisation, création, modification et suppression des articles ;</li>
+<li>Authentification permettant l'autorisation de la création, la modification et la suppression des ressources ;</li>
+<li>Redirection vers la visualisation d'un article aléatoire.</li>
+</ul>
+    </div>
+
+    <ul class="links">
+        
+        <li>
+            <a href="https://github.com/Romain-Guillot/kahibalo-data-server" alt="Github (service web)" class="github"><span class="url-name">Github (service web)</span> <span class="url-link">https://github.com/Romain-Guillot/kahibalo-data-server<span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/Romain-Guillot/kahibalo-web-server" alt="Github (application web)" class="github"><span class="url-name">Github (application web)</span> <span class="url-link">https://github.com/Romain-Guillot/kahibalo-web-server<span></a>
+        </li>
+        
+    </ul>
+
+    <h2>Technologies</h2>
+    <ul class="stack">
+        
+        <li>
+            <img src="assets/projects/stack/nodejs.png" alt="" class="stack-image">
+            <div class="stack-description"><p>Les deux services sont développés avec <strong>Node.js</strong></p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/nestjs.svg" alt="" class="stack-image">
+            <div class="stack-description"><p>Afin de rapidement développer une architecture de haute qualité, scalbale et évolutive, le framework <strong>Nest.js</strong> est utilisé par dessus Node.js pour développer les deux services</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/mongodb.png" alt="" class="stack-image">
+            <div class="stack-description"><p>Les données de l'application sont gérées avec <strong>MongoDB</strong>, un système de gestion de base de données NoSQL orienté documents</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/jwt.png" alt="" class="stack-image">
+            <div class="stack-description"><p>L'authorisation d'accès aux ressources est gérée avec le système de token <strong>JWT</strong></p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/docker.png" alt="" class="stack-image">
+            <div class="stack-description"><p>Le déploiement des services sur mon serveur est géré avec <strong>Docker</strong></p></div>
+        </li>
+        
+    </ul>
+
+    <h2 class="screenshots-title">Screenshots</h2>
+    <div class="screenshots-container">
+        
+            <div class="swiper-slide web"}>
+                <img src="assets/projects/kahibalo/screen1.png">
+            </div>
+        
+            <div class="swiper-slide web"}>
+                <img src="assets/projects/kahibalo/screen2.png">
+            </div>
+        
+            <div class="swiper-slide web"}>
+                <img src="assets/projects/kahibalo/screen3.png">
+            </div>
+        
+    </div>
+</div>
+
+        </main>
+        <footer id="footer" class="no-print">
+            <p>Généré et publié grâce à <a href="json_portfolio_generator.html">JSON Portfolio Generator</a>, outil développé avec Python, Jinja2 et Sass</p>
+        </footer>
+
+        
+    </body>
+</html>

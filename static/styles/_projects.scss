@@ -1,0 +1,71 @@
+#projects-wrapper {
+    h1 {
+        margin: 20px 0;
+        font-size: 1.6em;
+        font-weight: $weight-black;
+        @media print {
+            margin-top: 0;
+        }
+    }
+    > ul {
+        list-style-type: none;
+        padding: 0;
+        > li {
+            margin: 25px 0;
+            a {
+                display: grid;
+                grid-template-areas: "image content view";
+                grid-template-columns: 90px 1fr auto;
+                align-items: flex-start;
+                text-decoration: none;
+                color: inherit;
+                font-weight: $weight-regular;
+                .project-image {
+                    grid-area: image;
+                    width: 65px;
+                }
+                .project-content {
+                    grid-area: content;
+                }
+                .view {
+                    height: 100%;
+                    grid-area: view;
+                    display: flex;
+                    align-items: center;
+                }
+                .type, .title, .subtitle, .stack {
+                    margin: 0;
+                    padding: 0;
+                }
+                .type {
+                    font-size: 1em;
+                    color: $text-light;
+                    font-weight: $weight-black;
+                }
+                .title {
+                    font-size: 1.20em;
+                    font-weight: $weight-black;
+                    margin: 2px 0;
+                }
+                .subtitle {
+                    font-size: 1em;
+                    color: $text-light;
+                }
+                .stack {
+                    font-size: 0.9em;
+                    color: $text-light;
+                    margin-top: 10px;
+                    list-style-type: none;
+                    display: flex;  
+                    flex-wrap: wrap;
+                    li {
+                        margin: 0 5px 5px 0;
+                        padding: 3px 5px;
+                        background-color: rgba(0,0,0,0.1);
+                        border-radius: 3px;;
+                    }
+                }
+            }
+        }
+    }
+}

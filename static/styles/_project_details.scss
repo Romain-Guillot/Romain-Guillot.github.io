@@ -1,0 +1,130 @@
+$spacing: 40px;
+$small-spacing: 20px;
+#project-details-wrapper {
+    padding: 15px 0 0 0;
+    header {
+        display: grid;
+        grid-template-areas: "logo title";
+        grid-template-columns: 100px 1fr;
+        margin-left: -100px;
+        margin-bottom: $spacing;
+        h1 {
+            font-weight: $weight-black;
+            font-size: 3em;
+            padding: 0;
+            margin: 0 0 5px 0;
+        }
+        .title {
+            grid-area: title;
+        }
+        .logo {
+            grid-area: logo;
+            img {
+                width: 75px;
+            }
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: $text-light;
+        font-weight: $weight-black;
+        font-size: 1.3em;
+        margin: $spacing 0 10px 0;
+    }
+    .screenshots-title {
+        page-break-before: always;
+    }
+
+    .subtitle {
+        font-size: 1.7em;
+        font-weight: $weight-black;
+        margin: 0;
+        padding: 0;
+    }
+    .project-type {
+        font-style: italic;
+    }
+    .description, .project-type {
+        font-weight: $weight-light;
+        margin: $small-spacing 0;
+    }
+    .links {
+        padding: 0;
+        margin: $spacing 0;
+        list-style-type: none;
+        a {
+            display: block;
+            padding-left: 30px;
+            font-weight: $weight-bold;
+            padding: 6px 0 6px 30px;
+            text-decoration: none;
+            min-height: 1em;
+        }
+        .url-name {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .url-link {
+            font-weight: $weight-light;
+            display: inline-block;
+        }
+        .github {
+            background: $github-STATIC 0 50%/18px no-repeat;
+        }
+        .playstore {
+            background: $playstore-STATIC 0 50%/18px no-repeat;
+        }
+        .web {
+            background: $web-STATIC 0 50%/18px no-repeat;
+        }
+        .pdf {
+            background: $pdf-STATIC 0 50%/18px no-repeat;
+        }
+        .markdown {
+            background: $markdown-STATIC 0 50%/18px no-repeat;
+        }
+    }
+    .stack {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            display: grid;
+            grid-template-areas: "image description";
+            grid-template-columns: 150px 1fr;
+            align-items: center;
+            margin: 7px 0;
+        }
+        .stack-image {
+            grid-area: image;
+            max-height: 28px;
+            max-width: 150px;
+        }
+        .stack-description {
+            font-weight: $weight-light;
+            grid-area: description;
+            margin: 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .screenshots-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            border-radius: 4px;
+        }   
+        .web {
+            grid-column: 1 / -1;
+            width: 75%;
+            margin: auto !important;
+        }             
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Le but de **GeoQuiz** est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :
+
+* **l'application cliente** Android et iOS permettant de jouer aux différents quiz avec une difficulté croissante au fur et à mesure des parties ;
+* **l'application web** permettant de gérer la base de données des questions et des langues supportées.
+
+Quatre thèmes sont actuellement proposés avec des questions pouvant prendre différentes formes : avec du texte, avec des images ou avec des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaître son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).">
+        <meta name="language" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#F54040">
+
+        <meta property="og:site_name" content="Romain Guillotr">
+        <meta property="og:title" content="Romain Guillot">
+        <meta property="og:url" content="">
+        <meta property="og:language" content="fr">
+        <meta property="og:image:url" content="">
+        <meta property="og:type" content="website">
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+
+        <title>Romain Guillot • GeoQuiz</title>
+    </head>
+    <body>
+
+        
+
+        <header id="header"class="no-print">
+            <div class="title"><a href="index.html">Romain Guillot</a></div>
+<nav>
+    <ul class="menu no-print">
+        <li class="about "><a href="index.html">À propos</a></li>
+        <li class="resume "><a href="resume.html">CV</a></li>
+        <li class="projects "><a href="projects.html">Mes projets</a></li>
+    </ul>
+</nav>
+        </header>
+        <main>
+            
+<div id="project-details-wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets/projects/geoquiz/logo.png" class="rounded-image">
+        </div>
+        <div class="title">
+            <h1>GeoQuiz</h1>
+            <p class="subtitle">Application mobile multiplateforme de quiz sur la géographie accompagnée d'une application web d'administration</p>
+        </div>
+    </header>
+
+    <p class="project-type">Projet personnel (automne 2019 - présent)</p>
+
+    <div class="description">
+
+        <p>Le but de <strong>GeoQuiz</strong> est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :</p>
+<ul>
+<li><strong>l'application cliente</strong> Android et iOS permettant de jouer aux différents quiz avec une difficulté croissante au fur et à mesure des parties ;</li>
+<li><strong>l'application web</strong> permettant de gérer la base de données des questions et des langues supportées.</li>
+</ul>
+<p>Quatre thèmes sont actuellement proposés avec des questions pouvant prendre différentes formes : avec du texte, avec des images ou avec des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaître son niveau et de se comparer aux autres joueurs (le <em>leaderboard</em> est en cours de développement).</p>
+    </div>
+
+    <ul class="links">
+        
+        <li>
+            <a href="https://github.com/Romain-Guillot/GeoQuiz-ClientApp" alt="Github (application mobile)" class="github"><span class="url-name">Github (application mobile)</span> <span class="url-link">https://github.com/Romain-Guillot/GeoQuiz-ClientApp<span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/Romain-Guillot/GeoQuiz-AdminApp" alt="Githhub (application web d'administration)" class="github"><span class="url-name">Githhub (application web d'administration)</span> <span class="url-link">https://github.com/Romain-Guillot/GeoQuiz-AdminApp<span></a>
+        </li>
+        
+        <li>
+            <a href="https://play.google.com/store/apps/details?id=com.develob.geoquiz" alt="Play Store" class="playstore"><span class="url-name">Play Store</span> <span class="url-link">https://play.google.com/store/apps/details?id=com.develob.geoquiz<span></a>
+        </li>
+        
+    </ul>
+
+    <h2>Technologies</h2>
+    <ul class="stack">
+        
+        <li>
+            <img src="assets/projects/stack/flutter.png" alt="" class="stack-image">
+            <div class="stack-description"><p>L'application mobile et l'application web sont développées avec <strong>Flutter</strong>, le framework open source de développement d'applications mutliplateformes créé par Google.</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/firebase.png" alt="" class="stack-image">
+            <div class="stack-description"><p><strong>Firebase</strong> a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base de données de question et des données utilisateurs est gérée avec <strong>Cloud Firestore</strong>, une base de données NoSQL orientée documents. Les fichiers sont stockés sur <strong>Cloud Storage</strong> (photos de drapeaux ou de monuments par exemple). Les rapports de bugs sont collectés et analysés avec <strong>Crashlytics</strong>.</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/sqlite.png" alt="" class="stack-image">
+            <div class="stack-description"><p>La base de données de questions est sauvegardée localement sur l'appareil de l'utilisateur avec <strong>SQLite</strong>. Leurs progressions personnelles sont également stockées avec SQLite.</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/travisci.png" alt="" class="stack-image">
+            <div class="stack-description"><p>Les pipelines de CI/CD sont orchestrés avec <strong>Travis CI</strong>, en particulier pour les tests, la génération automatique de <em>screenshots</em> et la publication sur le Play Store.</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/docker.png" alt="" class="stack-image">
+            <div class="stack-description"><p>Un environnement de développement a été créé avec une image <strong>Docker</strong> contenant toutes les dépendances utilisées pour le développement des deux applications. L'environnement de déploiement pour l'application web est aussi géré avec <strong>Docker</strong>.</p></div>
+        </li>
+        
+        <li>
+            <img src="assets/projects/stack/sonarqube.png" alt="" class="stack-image">
+            <div class="stack-description"><p>La qualité du code des applications est analysée avec <strong>SonarQube</strong>.</p></div>
+        </li>
+        
+    </ul>
+
+    <h2 class="screenshots-title">Screenshots</h2>
+    <div class="screenshots-container">
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen1.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen2.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen3.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen4.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen5.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen6.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen7.jpg">
+            </div>
+        
+            <div class="swiper-slide "}>
+                <img src="assets/projects/geoquiz/screen8.jpg">
+            </div>
+        
+            <div class="swiper-slide web"}>
+                <img src="assets/projects/geoquiz/screen9.png">
+            </div>
+        
+    </div>
+</div>
+
+        </main>
+        <footer id="footer" class="no-print">
+            <p>Généré et publié grâce à <a href="json_portfolio_generator.html">JSON Portfolio Generator</a>, outil développé avec Python, Jinja2 et Sass</p>
+        </footer>
+
+        
+    </body>
+</html>
